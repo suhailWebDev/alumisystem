@@ -1,0 +1,14 @@
+const host='http://localhost:5000';
+export const registerRoute=`${host}/register`;
+export const loginRoute=`http://localhost:5000/login`;
+export const staffLoginRoute=`http://localhost:5000/stafflogin`;
+export const profileRoute=`${host}/validuser`;
+export const validfstaffRoute=`${host}/validstaff`;
+export const staffregisterRoute=`${host}/staffregister`;
+export const adminRegisterRoute=`${host}/adminregister`;
+export const adminLoginRoute=`${host}/adminlogin`;
+export const logoutRoute=`${host}/logout`;
+export const logoutstaffRoute=`${host}/logoutstaff`;
+export const adminlogoutRoute=`${host}/adminlogout`;
+export const addEventRoute=`${host}/addevent`;
+export const EventRoute=`${host}/events`;
