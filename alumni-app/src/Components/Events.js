@@ -33,7 +33,7 @@ useEffect(()=>{
           <h3 className='text-primary'>{cur.eventdate}</h3>
         </div>
         <div className='mx-sm-auto'>{cur.eventname}</div>
-        <button className='btn btn-danger mx-sm-auto'>Read more</button>
+        <div className='mx-sm-auto'>{cur.eventdescription}</div>
         </div>
       </div>)
     })}

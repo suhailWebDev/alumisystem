@@ -12,3 +12,5 @@ export const logoutstaffRoute=`${host}/logoutstaff`;
 export const adminlogoutRoute=`${host}/adminlogout`;
 export const addEventRoute=`${host}/addevent`;
 export const EventRoute=`${host}/events`;
+export const AlumniRoute=`${host}/alumnilist`;
+export const StaffRoute=`${host}/stafflist`;

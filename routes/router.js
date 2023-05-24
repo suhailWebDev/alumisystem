@@ -316,6 +316,27 @@ router.get("/events",async(req,res)=>{
         res.send(err);
     }
 });
+router.get("/alumnilist",async(req,res)=>{
+    const { name, profilePhoto, birth, email, contact, passyear, course, occupation, address } = req.body;
+    try{
+    const alumni=await AlumniUser.find();
+    res.send(alumni);
+    console.log(alumni);
+    }catch(err){
+        res.send(err);
+    }
+});
+
+router.get("/stafflist",async(req,res)=>{
+    const { name, birth, email, contact, join } = req.body;
+    try{
+    const staff=await StaffUser.find();
+    res.send(staff);
+    console.log(staff);
+    }catch(err){
+        res.send(err);
+    }
+});
 
 module.exports = router;
 

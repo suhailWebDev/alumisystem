@@ -1,10 +1,11 @@
 import React from 'react'
+import Events from '../Events'
 
 const EventList = () => {
   return (
-    <div>
-      Event List
-    </div>
+    <>
+      <Events/>
+    </>
   )
 }
 
