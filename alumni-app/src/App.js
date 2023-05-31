@@ -20,10 +20,10 @@ import AdminPage from './Components/Admin/AdminPage';
 import Logout from './Components/Logout';
 import NewAdmin from './Components/Admin/NewAdmin';
 import NewEvents from './Components/Admin/NewEvents';
-import AddGallery from './Components/Admin/AddGallery';
 import StaffList from './Components/Admin/StaffList';
 import AlumniList from './Components/Admin/AlumniList';
 import EventList from './Components/Admin/EventList';
+import AdminList from './Components/Admin/AdminList';
 
 
 function App() {
@@ -45,10 +45,10 @@ function App() {
       <Route path='/adminpage' element={<AdminPage/>}/>
       <Route path='/newadmin' element={<NewAdmin/>}/> 
       <Route path='/newevents' element={<NewEvents/>}/> 
-      <Route path='/addgallery' element={<AddGallery/>}/>  
       <Route path='/stafflist' element={<StaffList/>}/> 
       <Route path='/alumnilist' element={<AlumniList/>}/> 
       <Route path='/eventlist' element={<EventList/>}/> 
+      <Route path='/adminlist' element={<AdminList/>}/> 
       <Route path='*' element={<ErrorPage/>}/>
     </Routes>
     <Footer/>

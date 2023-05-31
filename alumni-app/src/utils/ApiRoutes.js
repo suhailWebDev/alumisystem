@@ -14,3 +14,4 @@ export const addEventRoute=`${host}/addevent`;
 export const EventRoute=`${host}/events`;
 export const AlumniRoute=`${host}/alumnilist`;
 export const StaffRoute=`${host}/stafflist`;
+export const AdminRoute=`${host}/adminlist`;

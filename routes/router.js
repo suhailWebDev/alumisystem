@@ -338,6 +338,17 @@ router.get("/stafflist",async(req,res)=>{
     }
 });
 
+router.get("/adminlist",async(req,res)=>{
+    const { name, email, contact } = req.body;
+    try{
+    const admin=await Admin.find();
+    res.send(admin);
+    console.log(admin);
+    }catch(err){
+        res.send(err);
+    }
+});
+
 module.exports = router;
 
 

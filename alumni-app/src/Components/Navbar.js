@@ -100,9 +100,6 @@ const RenderMenu=()=>{
           <Link className="nav-link active list-link" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active list-link" aria-current="page" to="/adminlogin">Admin</Link>
-        </li>
-        <li className="nav-item">
           <Link to='/about' className="nav-link list-link">About</Link>
         </li>
         <li className="nav-item">
@@ -138,10 +135,10 @@ const RenderMenu=()=>{
           <Link to='/newadmin' className="nav-link list-link">New Admin</Link>
         </li>
         <li>
-        <Link to='/addgallery' className="nav-link list-link">Add Gallery</Link>
+        <Link to='/stafflist' className="nav-link list-link">Staff List</Link>
         </li>
         <li>
-        <Link to='/stafflist' className="nav-link list-link">Staff List</Link>
+        <Link to='/adminlist' className="nav-link list-link">Admin List</Link>
         </li>
         <li>
         <Link to='/alumnilist' className="nav-link list-link">Alumni List</Link>

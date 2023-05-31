@@ -24,7 +24,7 @@ const MyProfile = () => {
 
         if (data.status == 401 || !data) {
             navigate('/login')
-        } else {
+        } else if(data.status===201) {
             console.log("user verify");
         }
         }
@@ -41,13 +41,13 @@ const MyProfile = () => {
                     <div className='row'>
                         <div className='col-md-4'>
                             <div className='profile-img'>
-                                <img src={suhail} alt='suhail' className='img-fluid' style={{ height: '150px', width: '200px' }} />
+                                <img src={userData.ValidUserOne?.profilePhoto} alt='suhail' className='img-fluid' style={{ height: '150px', width: '200px' }} />
                             </div>
                         </div>
                         <div className='col-md-6'>
                             <div className='profile-head'>
-                                <h5>{userData.ValidUserOne.name}</h5>
-                                <h6>{userData.ValidUserOne.occupation}</h6>
+                                <h5>{userData.ValidUserOne?.name}</h5>
+                                <h6>{userData.ValidUserOne?.occupation}</h6>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const MyProfile = () => {
                                             <label>User Id</label>
                                         </div>
                                         <div className='col-md-6'>
-                                            <p>{userData.ValidUserOne._id}</p>
+                                            <p>{userData.ValidUserOne?._id}</p>
                                         </div>
                                     </div>
                                     <div className='row'>
@@ -68,7 +68,7 @@ const MyProfile = () => {
                                             <label>Name</label>
                                         </div>
                                         <div className='col-md-6'>
-                                            <p>{userData.ValidUserOne.name}</p>
+                                            <p>{userData.ValidUserOne?.name}</p>
                                         </div>
                                     </div>
                                     <div className='row'>
@@ -76,7 +76,7 @@ const MyProfile = () => {
                                             <label>Email</label>
                                         </div>
                                         <div className='col-md-6'>
-                                            <p>{userData.ValidUserOne.email}</p>
+                                            <p>{userData.ValidUserOne?.email}</p>
                                         </div>
                                     </div>
                                     <div className='row'>
@@ -84,7 +84,7 @@ const MyProfile = () => {
                                             <label>Phone</label>
                                         </div>
                                         <div className='col-md-6'>
-                                            <p>{userData.ValidUserOne.contact}</p>
+                                            <p>{userData.ValidUserOne?.contact}</p>
                                         </div>
                                     </div>
                                     <div className='row'>
@@ -92,7 +92,7 @@ const MyProfile = () => {
                                             <label>Profession</label>
                                         </div>
                                         <div className='col-md-6'>
-                                            <p>{userData.ValidUserOne.occupation}</p>
+                                            <p>{userData.ValidUserOne?.occupation}</p>
                                         </div>
                                     </div>
                                 </div>

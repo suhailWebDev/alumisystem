@@ -48,8 +48,8 @@ useEffect(()=>{
       <td>{cur.name}</td>
       <td>{cur.email}</td>
       <td>{cur.contact}</td>
-      <td>{cur.birth}</td>
-      <td>{cur.join}</td>
+      <td>{cur.birth.slice(0,10)}</td>
+      <td>{cur.join.slice(0,10)}</td>
     </tr>
   </tbody>
       )
